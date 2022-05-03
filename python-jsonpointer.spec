@@ -28,4 +28,4 @@ Library to resolve JSON pointers according to RFC 6901
 %files -n python-%{pypi_name}
 %{_bindir}/*
 %{python3_sitelib}/%{pypi_name}.py
-%{python3_sitelib}/%{pypi_name}-%{version}-py.egg-info
+%{python3_sitelib}/%{pypi_name}-%{version}-py*.*.egg-info
