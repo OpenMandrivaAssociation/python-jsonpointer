@@ -2,7 +2,7 @@
 
 Name:           python-%{pypi_name}
 Version:	2.0
-Release:	2
+Release:	3
 Summary:        Library to resolve JSON pointers according to RFC 6901
 Group:          Development/Python
 License:        MIT
