@@ -1,7 +1,7 @@
 %global pypi_name jsonpointer
 
 Name:           python-%{pypi_name}
-Version:	2.4
+Version:	3.0.0
 Release:	1
 Summary:        Library to resolve JSON pointers according to RFC 6901
 Group:          Development/Python
