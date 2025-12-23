@@ -9,23 +9,14 @@ License:        MIT
 URL:            https://pypi.python.org/pypi/jsonpointer
 Source0:	https://files.pythonhosted.org/packages/source/j/jsonpointer/jsonpointer-%{version}.tar.gz
 BuildArch:      noarch
-BuildRequires:  pkgconfig(python3)
-BuildRequires:  python3dist(setuptools)
-BuildRequires:	python3dist(setuptools-scm)
+BuildSystem:	python
+BuildRequires:  python%{pyver}dist(setuptools)
+BuildRequires:	python%{pyver}dist(setuptools-scm)
 
 %description
 Library to resolve JSON pointers according to RFC 6901
 
-%prep
-%autosetup -p1 -n %{pypi_name}-%{version}
-
-%build
-%py3_build
-
-%install
-%py3_install
-
-%files -n python-%{pypi_name}
+%files
 %{_bindir}/*
-%{python3_sitelib}/%{pypi_name}.py
-%{python3_sitelib}/%{pypi_name}-%{version}-py*.*.egg-info
+%{python_sitelib}/%{pypi_name}.py
+%{python_sitelib}/%{pypi_name}-%{version}-py*.*.egg-info
