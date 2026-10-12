@@ -2,7 +2,7 @@
 
 Name:		python-jsonpointer
 Version:	3.1.1
-Release:	1
+Release:	2
 Summary:	Library to resolve JSON pointers according to RFC 6901
 Group:		Development/Python
 License:	MIT
@@ -22,6 +22,10 @@ Library to resolve JSON pointers according to RFC 6901.
 %prep -a
 # Remove bundled egg-info
 rm -rf %{module}.egg-info
+
+%build -p
+# The sdist is not a git checkout, so the versioning backend needs the version.
+export SETUPTOOLS_SCM_PRETEND_VERSION=%{version}
 
 %files
 %{_bindir}/%{module}
