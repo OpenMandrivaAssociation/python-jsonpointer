@@ -1,8 +1,8 @@
 %define module jsonpointer
 
 Name:		python-jsonpointer
-Version:	3.1.1
-Release:	2
+Version:	3.2.1
+Release:	1
 Summary:	Library to resolve JSON pointers according to RFC 6901
 Group:		Development/Python
 License:	MIT
